@@ -1,0 +1,136 @@
+.container {
+  min-width: 320px;
+  max-width: 1600px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1394px) {
+  .container {
+    min-width: 1394px;
+    padding: 0 40px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 320px) {
+  .advantages__container {
+    min-width: 216px;
+    max-width: 480px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__item {
+  display: inline-block;
+}
+
+@media (min-width: 320px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: #111518;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.advantages__text-man::before {
+  content: '';
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url(../../images/adventages-man.svg);
+}
+
+.advantages__text-mobile::before {
+  content: '';
+  width: 59px;
+  height: 60px;
+  padding-right: 10px;
+  background-image: url(../../images/adventages-mobile.svg);
+}
+
+.advantages__text-umbrela::before {
+  content: '';
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url(../../images/adventages-umbrela.svg);
+}
+/*# sourceMappingURL=main.css.map */
