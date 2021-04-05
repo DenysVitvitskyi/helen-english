@@ -6,10 +6,14 @@
   width: 100%;
   margin: 0 auto;
   background-color: $bg-black-color;
-  background-image: linear-gradient(to bottom, $bg-black-color 70%, $bg-white-color 30%); //--------------
+  background-image: linear-gradient(to bottom, $bg-black-color 70%, $bg-white-color 30%);
   
   @include for-desktop-up {
-    background-image: linear-gradient(to bottom, $bg-black-color 67%, $bg-white-color 33%); //--------------
+    background-image: linear-gradient(to bottom $bg-black-color 67%, $bg-white-color 33%);
+    background-image: url(../../images/fire-problems.png);
+    background-repeat: no-repeat;
+    background-size: 455px 472px;
+    background-position: top 88px right -48px;
   }
 }
 
@@ -23,13 +27,16 @@
   @include for-tablet-up {
     width: 768px;
     padding-top: 60px;
+    padding-bottom: 50px;
   }
 
   @include for-desktop-up {
     position: relative;
-    height: 840px;
+    height: 560px;
     padding-top: 100px;
-    width: 1344px;
+    max-width: 1680px;
+    padding-left: 183px;
+    padding-right: 183px;
   }
 
 }
@@ -49,13 +56,14 @@ color: $secondary-title-color;
 @include for-tablet-up {
   min-width: 588px;
   padding-bottom: 50px;
+  font-size: 26px;
 }
 
 @include for-desktop-up {
   min-width: 866px;
   padding-bottom: 130px;
-  font-size: 46px;
   width: 866px;
+  font-size: 46px;
 }
 
 }

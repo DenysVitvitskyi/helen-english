@@ -1,8 +1,7 @@
-.adventages {
-}
+// .adventages {
+// }
 
 .advantages__container {
-  outline: 1px solid teal;
   margin-left: auto;
   margin-right: auto;
   padding: 30px 52px 50px;
@@ -37,10 +36,13 @@
   @include for-tablet-up {
     flex-direction: row;
   }
+
+  @include for-desktop-up {
+    width: 1344px;
+  }
 }
 
 .advantages__item {
-  outline: 1px solid red;
   position: relative;
   height: 60px;
   display: flex;
@@ -48,6 +50,10 @@
 
   @include for-tablet-up {
     flex-basis: calc((100% - 42px) / 3);
+  }
+
+  @include for-desktop-up {
+    height: 102px;
   }
 }
 
@@ -67,8 +73,9 @@
   @include font-silo (bold, 14px, 1.4, 0.08em, $primary-title-color);
 
   @include for-desktop-up {
-    padding-left: 51px;
+    padding-left: 83px;
     font-size: 20px;
+
   }
 }
 
@@ -81,7 +88,7 @@
   width: 59px;
   height: 60px;
   margin-right: 10px;
-  background-image: url(../../images/advant.svg);
+  background-image: url(../../images/adventages-man-mob.svg);
   background-size: 59px 60px;
   background-repeat: no-repeat;
 
@@ -98,9 +105,15 @@
   width: 59px;
   height: 60px;
   margin-right: 10px;
-  background-image: url(../../images/advant.svg);
+  background-image: url(../../images/adventages-mobile-mob.svg);
   background-size: 59px 60px;
   background-repeat: no-repeat;
+
+  @include  for-desktop-up {
+    width: 100px;
+    height: 102px;
+    background-size: 100px 102px;
+  }
 }
 
 .advantages__item::before {
@@ -109,7 +122,13 @@
   width: 59px;
   height: 60px;
   margin-right: 10px;
-  background-image: url(../../images/advant.svg);
+  background-image: url(../../images/adventages-umbrela-mob.svg);
   background-size: 59px 60px;
   background-repeat: no-repeat;
+
+  @include  for-desktop-up {
+    width: 100px;
+    height: 102px;
+    background-size: 100px 102px;
+  }
 }
