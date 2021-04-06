@@ -1,0 +1,70 @@
+// ===== Медиа запросы =====
+// @include for-phone-only;
+@mixin for-phone-only {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+// @include for-tablet-up;
+@mixin for-tablet-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// @include for-desktop-up;
+@mixin for-desktop-up {
+  @media screen and (min-width: 1344px) {
+    @content;
+  }
+}
+
+// @include for-1680-up;
+@mixin for-1680-up {
+  @media screen and (min-width: 1680px) {
+    @content;
+  }
+}
+
+// ===== Центрирование флексами =====
+// @include centeredFlex;
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+// ===== Анимация =====
+// @include transition(transform);
+@mixin transition($type, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $timing-function;
+}
+
+@mixin transition2($type, $type2, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $timing-function, $type2 $duration $timing-function;
+}
+
+// ===== Стили текста =====
+// @include font-silo (500, 24px, 1.667, 0.02em, $accent-color);
+@mixin font-silo($weight, $size, $lh, $ls, $color) {
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+
+  @if $color {
+    color: $color;
+  }
+}
